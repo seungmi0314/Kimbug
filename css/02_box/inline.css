@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 대표적인 인라인 태그
+ span {
+    color: white;
+    background-color: #0066ff;
+    padding-left: 30px;
+    padding-right: 100px;
+
+    영역으로서의 역할을 하지 못함
+     padding-top: 60px; 
+} */
+
+
+span {
+    display: inline-block;
+    color: white;
+    background-color: #0066ff;
+    height: 300px;
+   
+
+}

@@ -1,0 +1,15 @@
+
+/* .은 class를 뜻하는 것 */
+.box {
+    box-sizing: border-box;
+    /* 해당 크기가 content박스에만 적용이 되고 최종적으로는 padding값 까지 포함해서 표현 됨*/
+    /**/
+    width : 480px;
+    height: 480px;
+
+    padding-top: 40px;
+    padding-left: 50px;
+
+    background-color: #0066ff;
+    color: white;
+}
