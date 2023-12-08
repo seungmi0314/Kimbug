@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: black;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+.tab-menu {
+  display: flex;
+
+
+  /* 이 셋은 기본 값  
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+  */
+  align-items: center;
+  max-width: 540px;
+  border-bottom: 1px solid #E5EAEF;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* float 하고 나니 ul의 높이가 0이 됨 */
+.tab-menu-item {
+  
+  margin-right: 16px;
+}
+
+/* ul 높이 해결방법 1*/
+/*.tab-menu {
+  overflow: hidden;
+}*/
+
+/* ul 높이 해결방법 2 */
+
+
+.tab-menu-item a {
+  /* a태그는 inline이라 바꿔줘야 함*/
+  display: block;
+
+  /* 타겟 영역을 넓히기 위해 */
+  padding: 16px 20px;
+}
+
+.tab-menu-item.active {
+  border-bottom: 2px solid #2860e1;
+}
+
+.tab-menu-item.active a{
+  color: #2860e1;
+  font-weight: 500;
+}
